@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <html <% if (config.language) { %>lang="<%= config.language %>"<% } %>>
 <head>
-  <meta charset="UTF-8">
-  <%
+  <meta charset="UTF-8"><%
   var title = page.title;
 
   if (is_archive()){
@@ -19,24 +18,14 @@
     title = __('tags')+' : ' + page.tag;
   }
   %>
-    <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
-    <% if (config.author){ %>
-    <meta name="author" content="<%= config.author %>">
-    <% } %>
-
-    <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>"><% } %>
-    <%- open_graph({twitter_id: theme.author.twitter, google_plus: theme.author.google_plus}) %>
-
-    <% if (theme.rss){ %>
-    <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
-    <% } %>
-    <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- config.root %><%- theme.favicon %>">
-    <% } %>
-    <% if (theme.apple_icon){ %>
-    <link rel="apple-touch-icon" href="<%- config.root %><%- theme.apple_icon %>">
-    <link rel="apple-touch-icon-precomposed" href="<%- config.root %><%- theme.apple_icon %>">
-    <% } %>
-    <%- css('css/style') %>
+  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no"><% if (config.author){ %>
+  <meta name="author" content="<%= config.author %>"><% } %>
+  <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>">
+  <% } %><%- open_graph({twitter_id: theme.author.twitter, google_plus: theme.author.google_plus}) %><% if (theme.rss){ %>
+  <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml"><% } %><% if (theme.favicon){ %>
+  <link rel="icon" href="<%- config.root %><%- theme.favicon %>"><% } %><% if (theme.apple_icon){ %>
+  <link rel="apple-touch-icon" href="<%- config.root %><%- theme.apple_icon %>">
+  <link rel="apple-touch-icon-precomposed" href="<%- config.root %><%- theme.apple_icon %>">
+  <% } %><%- css('css/style') %>
 </head>

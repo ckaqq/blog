@@ -58,12 +58,12 @@ creative_commons: none
 
 #### Author information
 author:
-  intro_line1:  "Hello ,I'm Larry Page in Google."    ## your introduction on the bottom of the page
-  intro_line2:  "This is my blog,believe it or not."  ## the 2nd line
+  intro_line1:  "欢迎光临我的博客！"    ## your introduction on the bottom of the page
+  intro_line2:  "个人能力有限，请多多指教"  ## the 2nd line
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:     ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
-  douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
+  douban: ckaqq    ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
   zhihu: kang-chen-72-53     ## e.g. jark  for http://www.zhihu.com/people/jark
   email: ck@kchen.cn     ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu

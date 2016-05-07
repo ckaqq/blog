@@ -138,13 +138,13 @@ $(document).ready(function(){
   (function() {
     var ds = document.createElement('script');
     ds.type = 'text/javascript';ds.async = true;
-    ds.src = '//static.kchen.cn/embed_ua.js';
+    ds.src = '//static.kchen.cn/js/embed_ua.js';
     ds.charset = 'UTF-8';
     (document.getElementsByTagName('head')[0] 
     || document.getElementsByTagName('body')[0]).appendChild(ds);
   })();
 </script> 
-<script src="//static.kchen.cn/ua-parser.js"></script>
+<script src="//static.kchen.cn/js/ua-parser.js"></script>
 <% } %>
 <% if( (config.disqus_shortname || theme.disqus_shortname) && page.comments) { %>
 <script type="text/javascript">

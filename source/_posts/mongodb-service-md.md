@@ -1,10 +1,8 @@
 ---
 title: Windows下Mongodb的配置与使用
 date: 2016-05-07
-tags:
-- Mongo
-categories:
-- 数据库
+tags: [Mongo]
+categories: 数据库
 ---
 
 ### 前言

@@ -2,7 +2,7 @@
 title: Ubuntu 14.04下源码安装 Nginx 和 PHP5
 date: 2016-06-06
 tags: [PHP, Nginx] 
-categories: Linux
+categories: PHP
 ---
 
 ### 源码编译安装 Nginx

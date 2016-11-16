@@ -1,7 +1,12 @@
 {
-  "name": "My Blog",
+  "name": "MyBlog",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "gen": "hexo generate",
+    "server": "hexo server",
+    "deploy": "hexo deploy"
+  },
   "hexo": {
     "version": "3.2.2"
   },

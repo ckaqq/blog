@@ -1,0 +1,26 @@
+<div id="main">
+  <div id="post-list">
+    <ul class="archives-post-list">
+      <% if (!page.year && !page.month) {%>
+        <%- list_archives({
+          format: 'YYYY 年 MM 月',
+          transform: function (name) {
+            return '<i class="fa" aria-hidden="true" style="padding: 5px">'+name+'</i>';
+          }
+        }) %>
+      <% } else { %>
+        <h1 class="info"><%= page.year %>年 <%= page.month %>月</h1>
+        <% page.posts.each(function(post){ %>
+          <li class="post-items" _href="<%- url_for(post.path)%>">
+            <h3 class="post-item-title">
+              <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= post.date.format("YYYY-MM-DD") %></time>
+              <a href="<%- url_for(post.path)%>"> <%= post.title%> </a>
+            </h3>
+          </li>
+        <% }) %>
+      <% } %>
+    </ul>
+  </div>
+</div>
+<%- partial('_partial/pagination')%>
+

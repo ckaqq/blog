@@ -5,7 +5,7 @@
 # Site
 title: 陈康的博客
 subtitle: while(!(succeed=try()));
-description: 
+description: 陈康的个人博客
 author: 陈康
 language: zh-CN
 timezone: Asia/Shanghai
@@ -64,7 +64,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: jacman
+theme: snippet
+
 stylus:
   compress: true
 

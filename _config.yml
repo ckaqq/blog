@@ -78,4 +78,4 @@ search:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@kchen.cn:blog.git
+  repo: git@kchen.cn:ck/blog.git

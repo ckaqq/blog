@@ -163,7 +163,7 @@ disqus:
 
 ### 畅言评论(需要ICP备案)
 changyan:
-  enable: true
+  enable: false
   appid: cytCCiVRW
   conf: prod_257221a19149d1d4f8b7c35ca3d879d2
 
